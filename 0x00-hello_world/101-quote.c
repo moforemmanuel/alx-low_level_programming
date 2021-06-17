@@ -1,10 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <unistd.h>
 /**
- * main - main block
- *Return: 0
+ * main - Entry point
+ * Return:1
  */
 int main(void)
 {
-printf("and that piece of art is useful\" - Dora korpar, 2015-10-19\n");
-return (0);
+char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, ch, sizeof(ch));
+return (1);
 }

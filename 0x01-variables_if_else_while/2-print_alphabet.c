@@ -9,10 +9,10 @@
 int main(void)
 {
 int i;
-char list[26] = "abcdefghijklmnopqrstuvwxyx";
+char list[26] = "abcdefghijklmnopqrstuvwxyz";
 
-for (i=0; i<26; i++)
+for (i = 0; i < 26; i++)
   putchar(list[i]);
-
+putchar("\n")
 return (0);
 }

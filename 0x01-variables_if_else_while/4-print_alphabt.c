@@ -12,10 +12,9 @@ int i;
 char list[27] = "abcdefghijklmnopqrstuvwxyz";
 
 for (i = 0; i < 26; i++)
-{  
-	putchar(list[i]);
-	if (list[i] == 'q' || list[i] == 'e')
-		continue;
+{
+	if (list[i] != 'e' && list[i] != 'q')
+		putchar(list[i]);
 }
 putchar('\n');
 return (0);

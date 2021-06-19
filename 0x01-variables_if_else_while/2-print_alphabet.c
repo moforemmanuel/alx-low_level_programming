@@ -10,7 +10,7 @@ int main(void)
   int i;
   char list[26] = "abcdefghijklmnopqrstuvwxyx";
   for (i=0; i<26; i++)
-    putchar(list[i])
+    putchar(list[i]);
 
-  return 0;
+  return (0);
 }

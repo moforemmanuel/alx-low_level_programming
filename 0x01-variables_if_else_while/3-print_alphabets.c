@@ -15,7 +15,7 @@ char list[27] = "abcdefghijklmnopqrstuvwxyz";
 for (i = 0; i < 26; i++)
         putchar(list[i]);
 for (i = 0; i < 26; i++)
-  putchar(toupper(list[i]));
+	putchar(toupper(list[i]));
 putchar('\n');
 return (0);
 }

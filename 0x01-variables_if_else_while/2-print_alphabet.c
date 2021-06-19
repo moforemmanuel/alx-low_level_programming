@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+65;6003;1c#include <stdlib.h>
 /**
 *main - main block
 *Description: return alphabets
@@ -13,6 +13,6 @@ char list[26] = "abcdefghijklmnopqrstuvwxyz";
 
 for (i = 0; i < 26; i++)
   putchar(list[i]);
- putchar("\n");
+ putchar('\n');
 return (0);
 }

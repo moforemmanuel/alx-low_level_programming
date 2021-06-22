@@ -1,7 +1,1 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-char _putchar(char a)
-{
-  return 'a';
-}
+int _putchar(char c);

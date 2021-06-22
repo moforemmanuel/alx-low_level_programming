@@ -3,4 +3,5 @@
 
 char _putchar(char a)
 {
-  return "a";
+  return 'a';
+}

@@ -4,20 +4,20 @@
  * int: integer to be tested
  * Return: abs
  */
-int _abs(int)
+int _abs(int n)
 {
 int abs;
-if (int > 0)
+if (n > 0)
 {
-	abs = int;
+	abs = n;
 }
-else if (int == 0)
+else if (n == 0)
 {
 	abs = 0;
 }
 else
 {
-	abs = int*-1;
+	abs = n*-1;
 }
 return (abs);
 }

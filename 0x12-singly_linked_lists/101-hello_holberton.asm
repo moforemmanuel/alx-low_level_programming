@@ -1,21 +1,18 @@
-extern printf
+section .data
+    msg DB "Hello, Holberton",10      ; 10 is the ASCII code for a new line (LF)
+    msgSize EQU $ - msg
+
+global main
 
 section .text
-    global main
 
 main:
-    push rbp
-
-    mov rdi,fmt
-    mov rsi,msg
-    mov rax,0
-    call printf
-
-    pop rbp
-
-    mov rax,0
+    mov rax, 4          ; function 4
+    mov rbx, 1          ; stdout
+    mov rcx, msg        ; msg
+    mov rdx, msgSize    ; size 
+    int 0x80
+    mov rax, 1          ; function 1
+    mov rbx, 0          ; code
+    int 0x80
     ret
-
-sectionn .data
-    msd: db "Hello, Holberton", 0
-    fmt: db "%s", 10, 0

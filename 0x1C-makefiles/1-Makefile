@@ -2,7 +2,5 @@
 CC = gcc
 SRC = $(wildcard *.c)
 
-all: run
-
-run: ${SRC}
+all: ${SRC}
 	${CC} ${SRC} -o school

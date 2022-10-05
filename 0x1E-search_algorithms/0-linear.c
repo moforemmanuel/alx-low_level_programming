@@ -1,11 +1,11 @@
 #include "search_algos.h"
 
 /**
- * linear_search - linear search implementation
+ * linear_search - linear search algo
  * @array: string
  * @size: size_t
  * @value: value
- * Return: int, index of the value
+ * Return: int, index of value
  */
 
 int linear_search(int *array, size_t size, int value)

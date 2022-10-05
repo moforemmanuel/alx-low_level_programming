@@ -1,11 +1,12 @@
 #include "search_algos.h"
 
 /**
- * binary_search - binary search implementation
- * @array: string
+ * binary_search - bin search
+ * @array: array of int
  * @size: size_t
  * @value: value
- * Return: int, index of the value
+ * Assumption: array sorted in asc order
+ * Return: index of value in array
  */
 
 int binary_search(int *array, size_t size, int value)
@@ -13,15 +14,15 @@ int binary_search(int *array, size_t size, int value)
 	int left = 0;
 	int right = size - 1;
 	int middle;
+
 	if (array == NULL)
 		return (-1);
 
-	while (left < right)
+	while (left <= right)
 	{
 		printf("Searching in array: ");
 		print_array(array, left, right);
 		middle = (left + right) / 2;
-
 		if (array[middle] < value)
 			left = middle + 1;
 		else if (array[middle] > value)
@@ -29,6 +30,7 @@ int binary_search(int *array, size_t size, int value)
 		else
 			return (middle);
 	}
+
 	return (-1);
 }
 

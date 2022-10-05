@@ -1,38 +1,38 @@
 #include "search_algos.h"
 
 /**
- * binary_search - bin search
- * @array: array of int
+ * binary_search - binary search implementation
+ * @array: string
  * @size: size_t
  * @value: value
- * Return: index of value in array
+ * Return: int, index of the value
  */
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i;
-	int left = 0;
-	int right = size - 1;
-	int middle;
-
-	if (array == NULL)
-		return (-1);
-
-	while (left <= right)
-	{
-		printf("Searching in array: ");
-		print_array(array, left, right);
-		middle = (left + right) / 2;
-		if (array[middle] < value)
-			left = middle + 1;
-		else if (array[middle] > value)
-			right = middle - 1;
-		else
-			return (middle);
-	}
-
+size_t i;
+int left = 0;
+int right = size;
+int middle;
+if (array == NULL)
 	return (-1);
+
+for (i = 0; left < right; i++)
+{
+	printf("Searching in array: ");
+	print_array(array, left, right);
+	middle = (left + right) / 2;
+
+	if (array[middle] < value)
+		left = middle + 1;
+	else if (array[middle] > value)
+		right = middle;
+	else
+		return (middle);
 }
+return (-1);
+}
+
 
 /**
  * print_array - print `n` elements of an array of integers

@@ -2,7 +2,7 @@
 
 /**
  * linear_search - linear search algo
- * @array: string
+ * @array: array of int
  * @size: size_t
  * @value: value
  * Return: int, index of value

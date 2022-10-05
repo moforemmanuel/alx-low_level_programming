@@ -5,7 +5,6 @@
  * @array: array of int
  * @size: size_t
  * @value: value
- * Assumption: array sorted in asc order
  * Return: index of value in array
  */
 
@@ -34,7 +33,6 @@ int binary_search(int *array, size_t size, int value)
 
 	return (-1);
 }
-
 
 /**
  * print_array - print `n` elements of an array of integers
